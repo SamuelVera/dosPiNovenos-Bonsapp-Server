@@ -1,0 +1,39 @@
+{
+  "name": "bonsapp-server",
+  "version": "1.0.0",
+  "description": "Servidor de la Aplicación Bonsapp",
+  "main": "./server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev-start": "nodemon server.js"
+  },
+  "author": "Samuel Vera, Juan Montenegro, Daniel Natera",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^3.0.6",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-session-sequelize": "^6.0.0",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.0.0",
+    "es6-promisify": "^6.0.1",
+    "express": "^4.16.4",
+    "express-session": "^1.16.1",
+    "express-validator": "^5.3.1",
+    "md5": "^2.2.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.11.0",
+    "pg-hstore": "^2.3.2",
+    "promisify": "0.0.3",
+    "pusher": "^2.2.0",
+    "pusher-js": "^4.4.0",
+    "sequelize": "^6.0.0",
+    "http-proxy-middleware": "^0.19.1",
+    "session": "^0.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.0"
+  }
+}
