@@ -5,7 +5,7 @@
   "main": "./server.js",
   "scripts": {
     "start": "node server.js",
-    "dev-start": "nodemon server.js"
+    "nodemon": "nodemon server.js"
   },
   "author": "Samuel Vera, Juan Montenegro, Daniel Natera",
   "license": "ISC",

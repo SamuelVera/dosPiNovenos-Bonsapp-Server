@@ -2,4 +2,4 @@
 
 Para iniciar el servidor usar el comando `npm start`
 
-Para iniciar servidor con nodemon utilizar `npm dev-start`
+Para iniciar servidor con nodemon utilizar `npm nodemon`
