@@ -12,5 +12,6 @@ exports.getAllPaises = async (req, res)  => {
         }
     }catch(err){
         res.send({code: 1, data: 'Error cargando países, vuelva a cargar la página'})
+        throw err
     }
 }

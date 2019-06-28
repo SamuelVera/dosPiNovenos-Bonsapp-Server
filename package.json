@@ -5,8 +5,7 @@
   "main": "./server.js",
   "scripts": {
     "start": "node server.js",
-    "nodemon": "nodemon server.js",
-    "build": "netlify-lambda build express"
+    "nodemon": "nodemon server.js"
   },
   "author": "Samuel Vera, Juan Montenegro, Daniel Natera",
   "license": "ISC",
@@ -38,5 +37,8 @@
   },
   "devDependencies": {
     "nodemon": "^1.19.0"
+  },
+  "engines": {
+    "node": "v10.15.3"
   }
 }
