@@ -63,7 +63,7 @@ app.use((req, res, next) => {
 
 sequelize.sync({logging: false})
 
-app.use('/.netlify/functions/server', router)
+app.use('/', router)
 
 sequelize
   .authenticate()
