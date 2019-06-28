@@ -20,7 +20,9 @@ const router = express.Router()
 const path = require('path')
 
 router.get('/hello-heroku', (req, res)=> {
-    res.send("Hola")
+    res.json({
+        hola: "hola"
+    })
 })
 
 router.get('/', (req, res) => {
