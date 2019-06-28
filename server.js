@@ -74,9 +74,9 @@ sequelize
   });
 
     // Set port to be used by Node.js
-  app.set('port', process.env.PORT || 5000)
+    const port = process.env.PORT || 5000
 
-  app.listen(app.get('port'), () => {
-      console.log('Node app is running on port', app.get('port'))
+  app.listen(port, () => {
+      console.log('Node app is running on port', port)
   })
 
