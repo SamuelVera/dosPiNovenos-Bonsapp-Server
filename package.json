@@ -2,7 +2,7 @@
   "name": "bonsapp-server",
   "version": "1.0.0",
   "description": "Servidor de la Aplicación Bonsapp",
-  "main": "./server.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "nodemon": "nodemon server.js"
