@@ -64,10 +64,6 @@ sequelize.sync({logging: false})
 
 app.use('/', router)
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '/build/index.html'))
-})
-
 sequelize
   .authenticate()
   .then(value => sequelize.sync())
