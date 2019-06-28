@@ -11,6 +11,7 @@ const flash = require('connect-flash')
 const sequelize = require('./config/db')
 const router = require('./routes')
 const app = express()
+const serverless = require('serverless-http')
 require("./config/passport")
 
 // CORS middleware
@@ -62,7 +63,7 @@ app.use((req, res, next) => {
 
 sequelize.sync({logging: false})
 
-app.use('/', router)
+app.use('/.netlify/functions/server', router)
 
 sequelize
   .authenticate()
