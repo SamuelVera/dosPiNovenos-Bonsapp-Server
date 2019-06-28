@@ -11,7 +11,6 @@ const flash = require('connect-flash')
 const sequelize = require('./config/db')
 const router = require('./routes')
 const app = express()
-const serverless = require('serverless-http')
 require("./config/passport")
 
 // CORS middleware
@@ -27,8 +26,6 @@ app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Credentials', true)
   next()
 });
-
-app.use(express.static(path.join(__dirname)));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
@@ -74,7 +71,7 @@ sequelize
   });
 
     // Set port to be used by Node.js
-    const port = process.env.PORT || 5000
+  const port = process.env.PORT || 5000
 
   app.listen(port, () => {
       console.log('Node app is running on port', port)
