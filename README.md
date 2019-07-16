@@ -1,5 +1,8 @@
-# Servidor de la PWA Bonsapp
+# Server of the PWA Bonsapp
 
-Para iniciar el servidor usar el comando `npm start`
+Developed with the framework Express.js and using the following middlewares and libraries:
+-
+
+# Starting the Dev Server
 
 Para iniciar servidor con nodemon utilizar `npm nodemon`
